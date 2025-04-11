@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Availability Predictor</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; background: #f0f0f0; }
+        .container { background: white; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        input, select, button { margin-top: 10px; padding: 10px; width: 100%; font-size: 16px; }
+        .result { margin-top: 20px; padding: 15px; background: #e0ffe0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚗 Parking Predictor</h2>
+        <form method="POST">
+            <label for="day">Day of the Week:</label>
+            <input type="text" id="day" name="day" placeholder="e.g., Monday" required>
+
+            <label for="time">Time (HH:MM):</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="location">Parking Location:</label>
+            <input type="text" id="location" name="location" placeholder="e.g., West Deck" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            {% if result is string %}
+                <div class="result">{{ result }}</div>
+            {% else %}
+                <div class="result">
+                    <strong>Prediction:</strong><br>
+                    📅 {{ result.day }} @ 🕒 {{ result.time }}<br>
+                    📍 Location: {{ result.location }}<br>
+                    🚦 Availability: <strong>{{ result.category }}</strong> ({{ result.confidence }}% confident)<br>
+                    🅿️ Estimated Spaces: <strong>{{ result.spaces }}</strong>
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
