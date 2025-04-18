@@ -9,19 +9,40 @@
   <h1>🚗 UNC Charlotte Parking Predictor</h1>
 
   <p>Select a parking deck:</p>
-  <div id="deck-buttons">
-
-    <script src="/static/script.js"></script>
-    
-    <button onclick="predict('North Level 3')">North Level 3</button>
-    <button onclick="predict('CRI Deck 1 Level 2')">CRI Deck 1 Level 2</button>
-    <button onclick="predict('South Village Level 4')">South Village Level 4</button>
-    <!-- Add more buttons as needed -->
-  </div>
+  <div id="deck-buttons"></div>
 
   <div id="result" style="margin-top: 20px;"></div>
 
+  <!-- First load the button generator and predict function -->
   <script>
+    const decks = [
+      "North Level 3",
+      "CRI Deck 1 Level 2",
+      "South Village Level 4",
+      "CRI Deck 1 Level 3",
+      "North Level 4",
+      "Union Level 2",
+      "Union Level 1",
+      "Union Level 3",
+      "South Village Level 2",
+      "South Village Level 3",
+      "South Village Level 5",
+      "South Village Level 6"
+      // Add more decks if you want!
+    ];
+
+    // Dynamically create buttons
+    const buttonsDiv = document.getElementById("deck-buttons");
+
+    decks.forEach(deck => {
+      const button = document.createElement("button");
+      button.innerText = deck;
+      button.className = "deck-button";
+      button.onclick = () => predict(deck);
+      buttonsDiv.appendChild(button);
+    });
+
+    // Predict function
     async function predict(location) {
       const response = await fetch("/predict", {
         method: "POST",
@@ -32,13 +53,19 @@
       const data = await response.json();
 
       document.getElementById("result").innerHTML = `
-        <h3> Prediction for ${data.location}</h3>
-        <p><strong>Day:</strong> ${data.day}</p>
-        <p><strong>Time Block:</strong> ${data.time}</p>
-        <p><strong>Availability:</strong> ${data.availability} (${data.confidence}% confident)</p>
-        <p><strong>Estimated Spaces:</strong> ${data.spaces}</p>
+        <div style="background-color: #f0f4ff; padding: 20px; border-radius: 10px; margin-top: 20px; max-width: 400px; text-align: center;">
+          <h3>Prediction for <strong>${data.location}</strong></h3>
+          <p><strong> Day:</strong> ${data.day}</p>
+          <p><strong> Time Block:</strong> ${data.time}</p>
+          <p><strong> Availability:</strong> <span style="color: ${data.availability === 'Empty' ? 'green' : data.availability === 'Moderate' ? 'orange' : 'red'}; font-weight: bold;">${data.availability} (${data.confidence}% confident)</span></p>
+          <p><strong> Estimated Spaces:</strong> ${data.spaces}</p>
+        </div>
       `;
     }
   </script>
+
+  <!-- Then load any external scripts (this should be LAST) -->
+  <script src="/static/script.js"></script>
+
 </body>
 </html>
