@@ -9,7 +9,7 @@ cls_model = joblib.load("parking_classification_model.pkl")
 encoded_columns = joblib.load("encoded_columns.pkl")
 
 # Create Flask app
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Home route (optional: show index.html if you build frontend)
 @app.route("/")
