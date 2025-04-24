@@ -16,25 +16,24 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-#  API endpoint
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.json
     location = data.get("location")
 
-    #  Automatically get current time and day
     now = datetime.now()
     current_day = now.strftime("%A")
     current_time = now.strftime("%H:%M")
 
-    #  Round time to model block
     model_blocks = ["10:00", "12:00", "14:00", "16:00", "18:00"]
     model_times = [datetime.strptime(t, "%H:%M") for t in model_blocks]
     user_time = datetime.strptime(current_time, "%H:%M")
     closest_block = min(model_times, key=lambda block: abs(block - user_time)).strftime("%H:%M")
 
-    # Build one-hot encoded input
-    input_dict = dict.fromkeys(encoded_columns, 0)
+    # Build ONLY expected input columns
+    input_dict = {col: 0 for col in encoded_columns}
+
+    # Set correct 1s
     if f"Day_{current_day}" in input_dict:
         input_dict[f"Day_{current_day}"] = 1
     if f"Time_{closest_block}" in input_dict:
@@ -42,7 +41,11 @@ def predict():
     if f"Location_{location}" in input_dict:
         input_dict[f"Location_{location}"] = 1
 
-    user_df = pd.DataFrame([input_dict])[encoded_columns]
+    # Create input dataframe
+    user_df = pd.DataFrame([input_dict])
+
+    # Make sure column order matches
+    user_df = user_df[encoded_columns]
 
     # Predict
     predicted_class = cls_model.predict(user_df)[0]
@@ -61,5 +64,6 @@ def predict():
 
     return jsonify(result)
 
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
