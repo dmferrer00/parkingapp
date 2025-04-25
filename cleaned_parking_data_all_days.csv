@@ -18,6 +18,7 @@ CRI Deck 1 Level 4,33.0,34.0,33.0,,7.0,,10:00,Monday
 CRI Deck 1 Level 3,24.0,24.0,24.0,0.0,4.0,,10:00,Monday
 CRI Deck 1 Level 2,19.0,20.0,19.0,0.0,4.0,,10:00,Monday
 CRI Deck 1 Level 1,38.0,38.0,37.0,,2.0,,10:00,Monday
+West Level 1,1.0,,,0.0,21.0,,10:00,Monday
 West Level 2,2.0,,,,,,10:00,Monday
 West Level 3,40.0,,,2.0,,,10:00,Monday
 West Level 4,70.0,,,,,,10:00,Monday
@@ -60,6 +61,7 @@ CRI Deck 1 Level 4,32.0,32.0,31.0,,7.0,,12:00,Monday
 CRI Deck 1 Level 3,61.0,61.0,61.0,0.0,3.0,,12:00,Monday
 CRI Deck 1 Level 2,21.0,22.0,21.0,1.0,4.0,,12:00,Monday
 CRI Deck 1 Level 1,38.0,38.0,38.0,,2.0,,12:00,Monday
+West Level 1,0.0,,,0.0,19.0,,12:00,Monday
 West Level 2,0.0,,,,,,12:00,Monday
 West Level 3,0.0,,,1.0,,,12:00,Monday
 West Level 4,1.0,,,,,,12:00,Monday
@@ -102,6 +104,7 @@ CRI Deck 1 Level 4,34.0,34.0,33.0,,8.0,,14:00,Monday
 CRI Deck 1 Level 3,44.0,45.0,44.0,1.0,4.0,,14:00,Monday
 CRI Deck 1 Level 2,15.0,16.0,15.0,2.0,4.0,,14:00,Monday
 CRI Deck 1 Level 1,37.0,37.0,37.0,,2.0,,14:00,Monday
+West Level 1,0.0,,,0.0,16.0,,14:00,Monday
 West Level 2,3.0,,,,,,14:00,Monday
 West Level 3,4.0,,,2.0,,,14:00,Monday
 West Level 4,17.0,,,,,,14:00,Monday
@@ -144,6 +147,7 @@ CRI Deck 1 Level 4,47.0,48.0,47.0,,8.0,,16:00,Monday
 CRI Deck 1 Level 3,52.0,52.0,51.0,3.0,4.0,,16:00,Monday
 CRI Deck 1 Level 2,71.0,71.0,70.0,2.0,4.0,,16:00,Monday
 CRI Deck 1 Level 1,36.0,36.0,35.0,,2.0,,16:00,Monday
+West Level 1,16.0,,,0.0,17.0,,16:00,Monday
 West Level 2,40.0,,,,,,16:00,Monday
 West Level 3,40.0,,,1.0,,,16:00,Monday
 West Level 4,29.0,,,,,,16:00,Monday
@@ -186,6 +190,7 @@ CRI Deck 1 Level 4,47.0,48.0,47.0,,8.0,,18:00,Monday
 CRI Deck 1 Level 3,58.0,58.0,57.0,1.0,3.0,,18:00,Monday
 CRI Deck 1 Level 2,51.0,51.0,51.0,2.0,4.0,,18:00,Monday
 CRI Deck 1 Level 1,26.0,26.0,26.0,,2.0,,18:00,Monday
+West Level 1,38.0,,,0.0,17.0,,18:00,Monday
 West Level 2,89.0,,,,,,18:00,Monday
 West Level 3,97.0,,,3.0,,,18:00,Monday
 West Level 4,83.0,,,,,,18:00,Monday
@@ -228,6 +233,7 @@ CRI Deck 1 Level 4,19.0,19.0,19.0,,7.0,,10:00,Tuesday
 CRI Deck 1 Level 3,35.0,36.0,35.0,0.0,4.0,,10:00,Tuesday
 CRI Deck 1 Level 2,13.0,13.0,12.0,0.0,4.0,,10:00,Tuesday
 CRI Deck 1 Level 1,35.0,35.0,35.0,,2.0,,10:00,Tuesday
+West Level 1,1.0,,,1.0,19.0,,10:00,Tuesday
 West Level 2,4.0,,,,,,10:00,Tuesday
 West Level 3,0.0,,,2.0,,,10:00,Tuesday
 West Level 4,0.0,,,,,,10:00,Tuesday
@@ -270,6 +276,7 @@ CRI Deck 1 Level 4,28.0,28.0,28.0,,6.0,,12:00,Tuesday
 CRI Deck 1 Level 3,30.0,30.0,29.0,0.0,4.0,,12:00,Tuesday
 CRI Deck 1 Level 2,8.0,8.0,8.0,0.0,4.0,,12:00,Tuesday
 CRI Deck 1 Level 1,36.0,36.0,35.0,,2.0,,12:00,Tuesday
+West Level 1,0.0,,,1.0,17.0,,12:00,Tuesday
 West Level 2,0.0,,,,,,12:00,Tuesday
 West Level 3,0.0,,,1.0,,,12:00,Tuesday
 West Level 4,0.0,,,,,,12:00,Tuesday
@@ -312,6 +319,7 @@ CRI Deck 1 Level 4,26.0,27.0,26.0,,7.0,,14:00,Tuesday
 CRI Deck 1 Level 3,16.0,16.0,15.0,0.0,4.0,,14:00,Tuesday
 CRI Deck 1 Level 2,6.0,6.0,5.0,0.0,4.0,,14:00,Tuesday
 CRI Deck 1 Level 1,36.0,36.0,35.0,,2.0,,14:00,Tuesday
+West Level 1,0.0,,,0.0,8.0,,14:00,Tuesday
 West Level 2,0.0,,,,,,14:00,Tuesday
 West Level 3,0.0,,,1.0,,,14:00,Tuesday
 West Level 4,0.0,,,,,,14:00,Tuesday
@@ -354,6 +362,7 @@ CRI Deck 1 Level 4,35.0,35.0,35.0,,6.0,,16:00,Tuesday
 CRI Deck 1 Level 3,38.0,38.0,38.0,1.0,4.0,,16:00,Tuesday
 CRI Deck 1 Level 2,24.0,24.0,24.0,1.0,4.0,,16:00,Tuesday
 CRI Deck 1 Level 1,34.0,35.0,34.0,,2.0,,16:00,Tuesday
+West Level 1,22.0,,,0.0,16.0,,16:00,Tuesday
 West Level 2,31.0,,,,,,16:00,Tuesday
 West Level 3,30.0,,,3.0,,,16:00,Tuesday
 West Level 4,34.0,,,,,,16:00,Tuesday
@@ -396,6 +405,7 @@ CRI Deck 1 Level 4,13.0,14.0,13.0,,8.0,,18:00,Tuesday
 CRI Deck 1 Level 3,53.0,54.0,53.0,4.0,4.0,,18:00,Tuesday
 CRI Deck 1 Level 2,47.0,47.0,46.0,2.0,4.0,,18:00,Tuesday
 CRI Deck 1 Level 1,33.0,34.0,33.0,,2.0,,18:00,Tuesday
+West Level 1,42.0,,,0.0,18.0,,18:00,Tuesday
 West Level 2,86.0,,,,,,18:00,Tuesday
 West Level 3,124.0,,,3.0,,,18:00,Tuesday
 West Level 4,64.0,,,,,,18:00,Tuesday
@@ -438,6 +448,7 @@ CRI Deck 1 Level 4,33.0,33.0,33.0,,8.0,,10:00,Wednesday
 CRI Deck 1 Level 3,46.0,46.0,46.0,0.0,4.0,,10:00,Wednesday
 CRI Deck 1 Level 2,22.0,22.0,22.0,1.0,4.0,,10:00,Wednesday
 CRI Deck 1 Level 1,32.0,32.0,32.0,,2.0,,10:00,Wednesday
+West Level 1,0.0,,,0.0,21.0,,10:00,Wednesday
 West Level 2,6.0,,,,,,10:00,Wednesday
 West Level 3,1.0,,,2.0,,,10:00,Wednesday
 West Level 4,8.0,,,,,,10:00,Wednesday
@@ -480,6 +491,7 @@ CRI Deck 1 Level 4,31.0,32.0,31.0,,8.0,,12:00,Wednesday
 CRI Deck 1 Level 3,44.0,44.0,44.0,0.0,1.0,,12:00,Wednesday
 CRI Deck 1 Level 2,4.0,4.0,3.0,0.0,4.0,,12:00,Wednesday
 CRI Deck 1 Level 1,38.0,38.0,37.0,,2.0,,12:00,Wednesday
+West Level 1,0.0,,,0.0,20.0,,12:00,Wednesday
 West Level 2,1.0,,,,,,12:00,Wednesday
 West Level 3,0.0,,,1.0,,,12:00,Wednesday
 West Level 4,0.0,,,,,,12:00,Wednesday
@@ -522,6 +534,7 @@ CRI Deck 1 Level 4,36.0,36.0,36.0,,8.0,,14:00,Wednesday
 CRI Deck 1 Level 3,34.0,35.0,34.0,1.0,4.0,,14:00,Wednesday
 CRI Deck 1 Level 2,14.0,14.0,14.0,1.0,4.0,,14:00,Wednesday
 CRI Deck 1 Level 1,31.0,32.0,31.0,,2.0,,14:00,Wednesday
+West Level 1,0.0,,,0.0,17.0,,14:00,Wednesday
 West Level 2,1.0,,,,,,14:00,Wednesday
 West Level 3,16.0,,,1.0,,,14:00,Wednesday
 West Level 4,33.0,,,,,,14:00,Wednesday
@@ -564,6 +577,7 @@ CRI Deck 1 Level 4,46.0,46.0,46.0,,8.0,,16:00,Wednesday
 CRI Deck 1 Level 3,47.0,47.0,47.0,5.0,4.0,,16:00,Wednesday
 CRI Deck 1 Level 2,25.0,26.0,25.0,1.0,3.0,,16:00,Wednesday
 CRI Deck 1 Level 1,38.0,38.0,38.0,,2.0,,16:00,Wednesday
+West Level 1,11.0,,,1.0,19.0,,16:00,Wednesday
 West Level 2,33.0,,,,,,16:00,Wednesday
 West Level 3,37.0,,,2.0,,,16:00,Wednesday
 West Level 4,32.0,,,,,,16:00,Wednesday
@@ -606,6 +620,7 @@ CRI Deck 1 Level 4,52.0,52.0,51.0,,8.0,,18:00,Wednesday
 CRI Deck 1 Level 3,59.0,59.0,58.0,4.0,4.0,,18:00,Wednesday
 CRI Deck 1 Level 2,51.0,51.0,50.0,2.0,4.0,,18:00,Wednesday
 CRI Deck 1 Level 1,7.0,7.0,6.0,,2.0,,18:00,Wednesday
+West Level 1,39.0,,,1.0,18.0,,18:00,Wednesday
 West Level 2,96.0,,,,,,18:00,Wednesday
 West Level 3,128.0,,,3.0,,,18:00,Wednesday
 West Level 4,84.0,,,,,,18:00,Wednesday
@@ -648,6 +663,7 @@ CRI Deck 1 Level 4,59.0,60.0,59.0,,0.0,,10:00,Thursday
 CRI Deck 1 Level 3,39.0,40.0,39.0,1.0,3.0,,10:00,Thursday
 CRI Deck 1 Level 2,15.0,16.0,15.0,0.0,2.0,,10:00,Thursday
 CRI Deck 1 Level 1,38.0,38.0,38.0,,2.0,,10:00,Thursday
+West Level 1,0.0,,,1.0,19.0,,10:00,Thursday
 West Level 2,0.0,,,,,,10:00,Thursday
 West Level 3,0.0,,,1.0,,,10:00,Thursday
 West Level 4,0.0,,,,,,10:00,Thursday
@@ -690,6 +706,7 @@ CRI Deck 1 Level 4,33.0,33.0,32.0,,8.0,,12:00,Thursday
 CRI Deck 1 Level 3,54.0,54.0,53.0,1.0,4.0,,12:00,Thursday
 CRI Deck 1 Level 2,14.0,15.0,14.0,2.0,4.0,,12:00,Thursday
 CRI Deck 1 Level 1,38.0,38.0,37.0,,2.0,,12:00,Thursday
+West Level 1,0.0,,,0.0,20.0,,12:00,Thursday
 West Level 2,0.0,,,,,,12:00,Thursday
 West Level 3,0.0,,,1.0,,,12:00,Thursday
 West Level 4,0.0,,,,,,12:00,Thursday
@@ -732,6 +749,7 @@ CRI Deck 1 Level 4,28.0,29.0,28.0,,8.0,,14:00,Thursday
 CRI Deck 1 Level 3,41.0,42.0,41.0,2.0,4.0,,14:00,Thursday
 CRI Deck 1 Level 2,7.0,7.0,7.0,2.0,4.0,,14:00,Thursday
 CRI Deck 1 Level 1,38.0,39.0,38.0,,2.0,,14:00,Thursday
+West Level 1,0.0,,,0.0,16.0,,14:00,Thursday
 West Level 2,1.0,,,,,,14:00,Thursday
 West Level 3,4.0,,,0.0,,,14:00,Thursday
 West Level 4,6.0,,,,,,14:00,Thursday
@@ -774,6 +792,7 @@ CRI Deck 1 Level 4,41.0,41.0,41.0,,8.0,,16:00,Thursday
 CRI Deck 1 Level 3,46.0,46.0,46.0,5,4.0,,16:00,Thursday
 CRI Deck 1 Level 2,29.0,30.0,29.0,2,4.0,,16:00,Thursday
 CRI Deck 1 Level 1,37.0,38.0,37.0,,2.0,,16:00,Thursday
+West Level 1,12.0,,,0,17.0,,16:00,Thursday
 West Level 2,23.0,,,,,,16:00,Thursday
 West Level 3,38.0,,,1,,,16:00,Thursday
 West Level 4,38.0,,,,,,16:00,Thursday
@@ -816,6 +835,7 @@ CRI Deck 1 Level 4,53.0,53.0,52.0,,8.0,,18:00,Thursday
 CRI Deck 1 Level 3,62.0,63.0,62.0,5.0,4.0,,18:00,Thursday
 CRI Deck 1 Level 2,45.0,46.0,45.0,2.0,4.0,,18:00,Thursday
 CRI Deck 1 Level 1,35.0,36.0,35.0,,2.0,,18:00,Thursday
+West Level 1,42.0,,,1.0,19.0,,18:00,Thursday
 West Level 2,88.0,,,,,,18:00,Thursday
 West Level 3,116.0,,,3.0,,,18:00,Thursday
 West Level 4,79.0,,,,,,18:00,Thursday
@@ -858,6 +878,7 @@ CRI Deck 1 Level 4,40.0,40,39.0,,8.0,,10:00,Friday
 CRI Deck 1 Level 3,65.0,65,64.0,0.0,4.0,,10:00,Friday
 CRI Deck 1 Level 2,13.0,13,13.0,0.0,4.0,,10:00,Friday
 CRI Deck 1 Level 1,37.0,37,36.0,,2.0,,10:00,Friday
+West Level 1,0.0,,,0.0,22.0,,10:00,Friday
 West Level 2,15.0,,,,,,10:00,Friday
 West Level 3,63.0,,,1.0,,,10:00,Friday
 West Level 4,58.0,,,,,,10:00,Friday
@@ -900,6 +921,7 @@ CRI Deck 1 Level 4,37.0,38.0,37.0,,8.0,,12:00,Friday
 CRI Deck 1 Level 3,58.0,58.0,57.0,0.0,4.0,,12:00,Friday
 CRI Deck 1 Level 2,30.0,30.0,29.0,1.0,4.0,,12:00,Friday
 CRI Deck 1 Level 1,38.0,38.0,38.0,,2.0,,12:00,Friday
+West Level 1,1.0,,,0.0,22.0,,12:00,Friday
 West Level 2,4.0,,,,,,12:00,Friday
 West Level 3,62.0,,,2.0,,,12:00,Friday
 West Level 4,74.0,,,,,,12:00,Friday
@@ -942,6 +964,7 @@ CRI Deck 1 Level 4,36.0,37.0,36.0,,8.0,,14:00,Friday
 CRI Deck 1 Level 3,55.0,56.0,55.0,1.0,4.0,,14:00,Friday
 CRI Deck 1 Level 2,26.0,26.0,26.0,1.0,3.0,,14:00,Friday
 CRI Deck 1 Level 1,35.0,35.0,34.0,,2.0,,14:00,Friday
+West Level 1,14.0,,,0.0,22.0,,14:00,Friday
 West Level 2,38.0,,,,,,14:00,Friday
 West Level 3,74.0,,,2.0,,,14:00,Friday
 West Level 4,67.0,,,,,,14:00,Friday
@@ -984,6 +1007,7 @@ CRI Deck 1 Level 4,54.0,54.0,54.0,,7.0,,16:00,Friday
 CRI Deck 1 Level 3,67.0,68.0,67.0,4.0,4.0,,16:00,Friday
 CRI Deck 1 Level 2,52.0,52.0,51.0,1.0,4.0,,16:00,Friday
 CRI Deck 1 Level 1,32.0,32.0,31.0,,2.0,,16:00,Friday
+West Level 1,125.0,,,0.0,22.0,,16:00,Friday
 West Level 2,65.0,,,,,,16:00,Friday
 West Level 3,137.0,,,2.0,,,16:00,Friday
 West Level 4,105.0,,,,,,16:00,Friday
@@ -1026,6 +1050,7 @@ CRI Deck 1 Level 4,,,,,,,18:00,Friday
 CRI Deck 1 Level 3,,,,,,,18:00,Friday
 CRI Deck 1 Level 2,,,,,,,18:00,Friday
 CRI Deck 1 Level 1,,,,,,,18:00,Friday
+West Level 1,,,,,,,18:00,Friday
 West Level 2,,,,,,,18:00,Friday
 West Level 3,,,,,,,18:00,Friday
 West Level 4,,,,,,,18:00,Friday

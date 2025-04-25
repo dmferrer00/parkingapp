@@ -10,7 +10,7 @@ target_parking_decks = [
     "North Level 1", "North Level 2", "North Level 3", "North Level 4", "North Level 5", "North Level 6",
     "Union Level 1", "Union Level 2", "Union Level 3", "Union Level 4", "Union Level 5", "Union Level 6",
     "CRI Deck 1 Level 1", "CRI Deck 1 Level 2", "CRI Deck 1 Level 3", "CRI Deck 1 Level 4", "CRI Deck 1 Level 5", "CRI Deck 1 Level 6", "CRI Deck 1 Level 7",
-    "Wes Level 1", "West Level 2", "West Level 3", "West Level 4", "West Level 5",
+    "West Level 1", "West Level 2", "West Level 3", "West Level 4", "West Level 5",
     "Cone 1", "Cone 2", "South Village Level 1", "South Village Level 2", "South Village Level 3",
     "South Village Level 4", "South Village Level 5", "South Village Level 6",
     "East 1 Level 1","East 1 Level 2", "East 1 Level 3","East 1 Level 4","East 2 Level 1","East 2 Level 2", "East 2 Level 3","East 2 Level 4","East 3 Level 1","East 3 Level 2","East 3 Level 3","East 3 Level 4","East 3 Level 5"
