@@ -26,6 +26,17 @@
       "East 1": ["Level 1", "Level 2", "Level 3", "Level 4"]
     };
 
+    const deckMaps = {
+      "North": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.9289049315875!2d-80.73188857684873!3d35.31304703527742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c0e0c1193c5%3A0xe6d60c75c0e770f6!2sNorth%20Deck!5e0!3m2!1sen!2sus!4v1745857176648!5m2!1sen!2sus",
+      "CRI Deck 1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5475.632124128691!2d-80.74318955811619!3d35.31019689243377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c1801cb1b8d%3A0x137ddd03f10e2eda!2sCRI%20Deck%20Visitor%20Parking!5e0!3m2!1sen!2sus!4v1745857251703!5m2!1sen!2sus",
+      "South Village": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512.132861594349!2d-80.73657154338225!3d35.30433079986369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c1c4d1e9521%3A0xf8d0ba08d394a7f7!2sSouth%20Village%20Deck%2C%20Johnson%20Alumni%20Way%2C%20Charlotte%2C%20NC%2028223!5e0!3m2!1sen!2sus!4v1745857394760!5m2!1sen!2sus",
+      "Union": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6511.745250702951!2d-80.73609947459562!3d35.30914631231792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c1087999f01%3A0x94f70f1758915871!2sUnion%20Deck!5e0!3m2!1sen!2sus!4v1745857438719!5m2!1sen!2sus",
+      "West": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512.132861594349!2d-80.73657154338225!3d35.30433079986369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541d456447aeb7%3A0x86e5519be6381ac6!2sWest%20Deck!5e0!3m2!1sen!2sus!4v1745857358428!5m2!1sen!2sus",
+      "East 3" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.000004838311!2d-80.72928934657564!3d35.305981239596456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c067e539253%3A0xe70b1d611c17abe8!2sEast%20Deck%202!5e0!3m2!1sen!2sus!4v1745857518774!5m2!1sen!2sus",
+      "East 2" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.000004838311!2d-80.72928934657564!3d35.305981239596456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c067e539253%3A0xe70b1d611c17abe8!2sEast%20Deck%202!5e0!3m2!1sen!2sus!4v1745857518774!5m2!1sen!2sus",
+      "East 1" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.000004838311!2d-80.72928934657564!3d35.305981239596456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c042efe4143%3A0xa46232b6f497a064!2sEast%20Deck%201!5e0!3m2!1sen!2sus!4v1745857490382!5m2!1sen!2sus",
+    };
+
     const buttonsDiv = document.getElementById("deck-buttons");
     const resultDiv = document.getElementById("result");
 
@@ -60,10 +71,14 @@
         const deckButton = document.createElement("button");
         deckButton.innerText = deckName;
         deckButton.className = "deck-button";
-        deckButton.onclick = () => showLevelButtons(deckName);
+        deckButton.onclick = () => {
+          showLevelButtons(deckName);
+          updateMap(deckName);
+        };
         buttonsDiv.appendChild(deckButton);
       });
       resultDiv.innerHTML = "";
+      mapIframe.src = "";
     }
 
     // Predict function
@@ -85,6 +100,16 @@
           <p><strong> Estimated Spaces:</strong> ${data.spaces}</p>
         </div>
       `;
+    }
+
+    // Map function
+    function updateMap(deckName) {
+      const mapURL = deckMaps[deckName];
+      if (mapURL) {
+        mapIframe.src = mapURL;
+      } else {
+        mapIframe.src = "";
+      }
     }
 
     // Run it all
