@@ -13,34 +13,58 @@
 
   <div id="result" style="margin-top: 20px;"></div>
 
-  <!-- First load the button generator and predict function -->
+  <!-- Updated JavaScript to handle deck -> level -> prediction -->
   <script>
-    const decks = [
-      "North Level 3",
-      "CRI Deck 1 Level 2",
-      "South Village Level 4",
-      "CRI Deck 1 Level 3",
-      "North Level 4",
-      "Union Level 2",
-      "Union Level 1",
-      "Union Level 3",
-      "South Village Level 2",
-      "South Village Level 3",
-      "South Village Level 5",
-      "South Village Level 6"
-      // Add more decks if you want!
-    ];
+    const decks = {
+      "North": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+      "CRI Deck 1": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7"],
+      "South Village": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+      "Union": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+      "West": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"],
+      "East 3": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"],
+      "East 2": ["Level 1", "Level 2", "Level 3", "Level 4"],
+      "East 1": ["Level 1", "Level 2", "Level 3", "Level 4"]
+    };
 
-    // Dynamically create buttons
     const buttonsDiv = document.getElementById("deck-buttons");
+    const resultDiv = document.getElementById("result");
 
-    decks.forEach(deck => {
-      const button = document.createElement("button");
-      button.innerText = deck;
-      button.className = "deck-button";
-      button.onclick = () => predict(deck);
-      buttonsDiv.appendChild(button);
-    });
+    function clearButtons() {
+      buttonsDiv.innerHTML = "";
+    }
+
+    // Show level buttons
+    function showLevelButtons(deckName) {
+      clearButtons();
+      decks[deckName].forEach(level => {
+        const levelButton = document.createElement("button");
+        levelButton.innerText = level;
+        levelButton.className = "level-button";
+        levelButton.onclick = () => predict(`${deckName} ${level}`);
+        buttonsDiv.appendChild(levelButton);
+      });
+
+      // Back button
+      const backButton = document.createElement("button");
+      backButton.innerText = "⬅️ Back to Decks";
+      backButton.className = "back-button";
+      backButton.style.marginTop = "20px";
+      backButton.onclick = () => showDeckButtons();
+      buttonsDiv.appendChild(backButton);
+    }
+
+    // Show deck buttons
+    function showDeckButtons() {
+      clearButtons();
+      Object.keys(decks).forEach(deckName => {
+        const deckButton = document.createElement("button");
+        deckButton.innerText = deckName;
+        deckButton.className = "deck-button";
+        deckButton.onclick = () => showLevelButtons(deckName);
+        buttonsDiv.appendChild(deckButton);
+      });
+      resultDiv.innerHTML = "";
+    }
 
     // Predict function
     async function predict(location) {
@@ -52,7 +76,7 @@
 
       const data = await response.json();
 
-      document.getElementById("result").innerHTML = `
+      resultDiv.innerHTML = `
         <div style="background-color: #f0f4ff; padding: 20px; border-radius: 10px; margin-top: 20px; max-width: 400px; text-align: center;">
           <h3>Prediction for <strong>${data.location}</strong></h3>
           <p><strong> Day:</strong> ${data.day}</p>
@@ -62,6 +86,9 @@
         </div>
       `;
     }
+
+    // Run it all
+    showDeckButtons();
   </script>
 
   <!-- Then load any external scripts (this should be LAST) -->
