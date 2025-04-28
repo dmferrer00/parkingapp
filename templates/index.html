@@ -13,6 +13,8 @@
 
   <div id="result" style="margin-top: 20px;"></div>
 
+  <iframe id="map" src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   <!-- Updated JavaScript to handle deck -> level -> prediction -->
   <script>
     const decks = {
@@ -39,23 +41,25 @@
 
     const buttonsDiv = document.getElementById("deck-buttons");
     const resultDiv = document.getElementById("result");
+    const mapIframe = document.getElementById("map");
 
     function clearButtons() {
       buttonsDiv.innerHTML = "";
     }
 
-    // Show level buttons
     function showLevelButtons(deckName) {
       clearButtons();
       decks[deckName].forEach(level => {
         const levelButton = document.createElement("button");
         levelButton.innerText = level;
         levelButton.className = "level-button";
-        levelButton.onclick = () => predict(`${deckName} ${level}`);
+        levelButton.onclick = () => {
+          predict(`${deckName} ${level}`);
+          updateMap(deckName);
+        };
         buttonsDiv.appendChild(levelButton);
       });
 
-      // Back button
       const backButton = document.createElement("button");
       backButton.innerText = "⬅️ Back to Decks";
       backButton.className = "back-button";
@@ -64,7 +68,6 @@
       buttonsDiv.appendChild(backButton);
     }
 
-    // Show deck buttons
     function showDeckButtons() {
       clearButtons();
       Object.keys(decks).forEach(deckName => {
@@ -81,7 +84,6 @@
       mapIframe.src = "";
     }
 
-    // Predict function
     async function predict(location) {
       const response = await fetch("/predict", {
         method: "POST",
@@ -102,7 +104,6 @@
       `;
     }
 
-    // Map function
     function updateMap(deckName) {
       const mapURL = deckMaps[deckName];
       if (mapURL) {
@@ -112,7 +113,6 @@
       }
     }
 
-    // Run it all
     showDeckButtons();
   </script>
 
