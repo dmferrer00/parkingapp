@@ -11,7 +11,7 @@ encoded_columns = joblib.load("encoded_columns.pkl")
 # Create Flask app
 app = Flask(__name__)
 
-# Home route (optional: show index.html if you build frontend)
+# Home route 
 @app.route("/")
 def index():
     return render_template("index.html")
