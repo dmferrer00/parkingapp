@@ -8,7 +8,7 @@
 <body>
   <h1>UNC Charlotte Parking Predictor</h1>
 
-  <p>___________________<u>Select a parking deck</u>___________________</p>
+  <p>______________<u>Select a parking deck</u>______________</p>
   <div id="deck-buttons"></div>
 
   <div id="result" style="margin-top: 20px;"></div>
@@ -61,7 +61,7 @@
       });
 
       const backButton = document.createElement("button");
-      backButton.innerText = "⬅️ Back to Decks";
+      backButton.innerText = "⬅️Back";
       backButton.className = "back-button";
       backButton.style.marginTop = "20px";
       backButton.onclick = () => showDeckButtons();
@@ -117,7 +117,7 @@
   </script>
 
   <!-- Then load any external scripts (this should be LAST) -->
-  <script src="/static/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
