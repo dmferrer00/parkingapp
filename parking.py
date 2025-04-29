@@ -27,7 +27,7 @@ def categorize_availability(spaces):
 df["Availability Category"] = df["Available Spaces"].apply(categorize_availability)
 df["Availability Category"] = df["Availability Category"].map({"Full": 0, "Moderate": 1, "Empty": 2})
 
-# Keep only Day, Time, Location (important!)
+#  Day, Time, Location
 df = df[["Day", "Time", "Location", "Available Spaces", "Availability Category"]]
 
 # One-hot encode categorical variables
