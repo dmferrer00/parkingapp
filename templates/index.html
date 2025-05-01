@@ -95,7 +95,6 @@
 
       resultDiv.innerHTML = `
         <div style="background-color: #f0f4ff; padding: 20px; border-radius: 10px; margin-top: 20px; max-width: 400px; text-align: center;">
-          <h3>Prediction for <strong>${data.location}</strong></h3>
           <p><strong> Day:</strong> ${data.day}</p>
           <p><strong> Time Block:</strong> ${data.time}</p>
           <p><strong> Availability:</strong> <span style="color: ${data.availability === 'Empty' ? 'green' : data.availability === 'Moderate' ? 'orange' : 'red'}; font-weight: bold;">${data.availability} (${data.confidence}% confident)</span></p>
